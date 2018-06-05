@@ -1,0 +1,51 @@
+@charset "UTF-8";
+// ---------------------------------------------
+// 导入公用样式，包含默认变量、自定义变量、_mixin、_funciton、_placeholder、_mediaQuery、_normalize、_typography、_helpers以及移动端自适应需要的字体设置
+// ---------------------------------------------
+@import "./common-m.scss";
+// ---------------------------------------------
+// 下面为直接的css导入
+// ---------------------------------------------
+// 导入模块
+@import "./modules/_button.scss";
+@import "./modules/_form.scss";
+@import "./modules/_animate.scss";
+@import "./modules/_loading.scss";
+// 导入第三方库
+//@import "vendors/others";
+// ---------------------------------------------
+// 页面具体样式
+// ---------------------------------------------
+.c-Main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    @at-root #{&}-hd {
+        flex: 0 0 auto;
+    }
+    @at-root #{&}-bd {
+        flex: 1 1 auto;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    @at-root #{&}-ft {
+        flex: 0 0 auto;
+    }
+}
+
+.c-Box {
+    margin-top: rem(10px);
+    border: 1px solid #ccc;
+    width: rem(375px);
+    font-size: rem(24px);
+}
+
+.c-TestAspectRatio {
+    width: 80%;
+    border: 1px solid blue;
+    @include aspectRatio(160, 80);
+}
+
+.c-DoubleWing {
+    @include DoubleWing(60, 80);
+}
