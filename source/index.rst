@@ -12,7 +12,7 @@ Welcome to adwind's documentation!
 
 
 
-Indices and tables
+Indices and tables by adwind
 ==================
 
 * :ref:`genindex`
