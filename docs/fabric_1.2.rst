@@ -411,7 +411,6 @@ Hyperledger Fabric 1.2 部署 测试
 
 十.阿里云小坑 
 
-  
    1.编辑器打开文件
 
 ::
@@ -420,8 +419,9 @@ Hyperledger Fabric 1.2 部署 测试
 
 ..
 
-   2.所有environment下添加 -GODEBUG=netdns=go
+   2.所有environment下添加 -GODEBUG=netdns=go |6.png|
 
+.. |6.png| image:: https://img-blog.csdn.net/2018080717573338?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTM3MzczMzY=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70
 .. |1533546165852.jpg| image:: https://upload-images.jianshu.io/upload_images/10417784-09d76947034e3f75.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/840
 .. |2.jpg| image:: https://upload-images.jianshu.io/upload_images/10417784-39cfd0e517c731ec.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/840
 .. |3.jpg| image:: https://upload-images.jianshu.io/upload_images/10417784-25d929a0d1007c5a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/840
