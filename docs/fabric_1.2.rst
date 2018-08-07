@@ -81,7 +81,6 @@ Hyperledger Fabric 1.2 部署 测试
 二、go环境部署 
 ------------
 
-''
 
    1.安装包下载
 
@@ -146,7 +145,6 @@ Hyperledger Fabric 1.2 部署 测试
 三、Docker安装 
 -------------
 
-''
    1.安装依赖
 
 ::
@@ -232,7 +230,6 @@ Hyperledger Fabric 1.2 部署 测试
 四.docker-compose 安装 
 ---------------------
 
-''
 
    1.安装
 
@@ -259,7 +256,6 @@ Hyperledger Fabric 1.2 部署 测试
 五.安装node 
 ----------
 
-''
    1.nodejs和npm
 
 ::
@@ -297,11 +293,9 @@ Hyperledger Fabric 1.2 部署 测试
 
 
 六.源码下载 
----------
 
-''
 
-  1.创建文件目录,进入目录下
+   1.创建文件目录,进入目录下
 
 ::
 
@@ -325,9 +319,6 @@ Hyperledger Fabric 1.2 部署 测试
    git branch -a  （此处若不是1.2 可 git checkout release-1.2）
 
 七.下载fabric-samples 
---------------------
-
-''
 
    1.进入Hyperledger目录
 
@@ -358,9 +349,6 @@ Hyperledger Fabric 1.2 部署 测试
    4.目录效果如下 |1533546165852.jpg|
 
 八.下载镜像和要执行的二进制文件 
---------------------------
-
-''
 
    1.进入到fabric-samples目录
 
@@ -391,9 +379,8 @@ Hyperledger Fabric 1.2 部署 测试
    export PATH=.:$PATH:/home/gopath/src/github.com/hyperledger/fabric-samples/bin
 
 九.执行脚本测试 
--------------
 
-''
+   
    1.进到fabric-samples/first-network
 
 ::
@@ -418,15 +405,13 @@ Hyperledger Fabric 1.2 部署 测试
 
 ..
 
-   4.成功执行后效果 |image.png|
+   4.成功执行后效果 |4.png|
 
-   5.关闭 |image.png|
+   5.关闭 |5.png|
 
 十.阿里云小坑 
------------
 
-''
-
+  
    1.编辑器打开文件
 
 ::
@@ -440,5 +425,5 @@ Hyperledger Fabric 1.2 部署 测试
 .. |1533546165852.jpg| image:: https://upload-images.jianshu.io/upload_images/10417784-09d76947034e3f75.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/840
 .. |2.jpg| image:: https://upload-images.jianshu.io/upload_images/10417784-39cfd0e517c731ec.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/840
 .. |3.jpg| image:: https://upload-images.jianshu.io/upload_images/10417784-25d929a0d1007c5a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/840
-.. |image.png| image:: https://upload-images.jianshu.io/upload_images/10417784-fa152cca1a08cf70.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/840
-.. |image.png| image:: https://upload-images.jianshu.io/upload_images/10417784-4f76abcfca0359f9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/840
+.. |4.png| image:: https://upload-images.jianshu.io/upload_images/10417784-fa152cca1a08cf70.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/840
+.. |5.png| image:: https://upload-images.jianshu.io/upload_images/10417784-4f76abcfca0359f9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/840
