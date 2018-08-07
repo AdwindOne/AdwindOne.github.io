@@ -1,7 +1,3 @@
-.. adwind documentation master file, created by
-   sphinx-quickstart on Tue Aug  7 15:22:51 2018.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
 
 Welcome to adwind's documentation!
 ==================================
@@ -13,6 +9,47 @@ Welcome to adwind's documentation!
 
 
 Indices and tables by adwind
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+
+
+test1
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+
+
+test2
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+
+
+
+test3
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+
+
+test4
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+
+
+test5
 ==================
 
 * :ref:`genindex`
