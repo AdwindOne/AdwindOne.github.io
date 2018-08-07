@@ -78,7 +78,7 @@ Hyperledger Fabric 1.2 部署 测试
 
    GNU Wget 1.17.1 built on linux-gnu.
 
-二、go环境部署 
+二.go环境部署 
 ------------
 
 
@@ -142,7 +142,7 @@ Hyperledger Fabric 1.2 部署 测试
 
    go version go1.9.2 linux/amd64
 
-三、Docker安装 
+三.Docker安装 
 -------------
 
    1.安装依赖
