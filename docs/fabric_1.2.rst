@@ -1,7 +1,7 @@
-###Hyperledger Fabric 1.2 部署 测试 
+Hyperledger Fabric 1.2 部署 测试 
 =================================
 
-#####一.环境准备
+一.环境准备
 --------------
 
    docker -v
@@ -78,7 +78,12 @@
 
    GNU Wget 1.17.1 built on linux-gnu.
 
-###二、go环境部署 >1.安装包下载
+二、go环境部署 
+------------
+
+''
+
+   1.安装包下载
 
 ::
 
@@ -138,7 +143,11 @@
 
    go version go1.9.2 linux/amd64
 
-###三、Docker安装 >1.安装依赖
+三、Docker安装 
+-------------
+
+''
+   1.安装依赖
 
 ::
 
@@ -220,7 +229,12 @@
 
    docker run sl (显示小火车突突而过)
 
-###四.docker-compose 安装 >1.安装
+四.docker-compose 安装 
+---------------------
+
+''
+
+   1.安装
 
 ::
 
@@ -242,7 +256,11 @@
 
    docker-compose -v (出现类似docker-compose version 1.22.0, build f46880fe  则成功)
 
-###五.安装node >1.nodejs和npm
+五.安装node 
+----------
+
+''
+   1.nodejs和npm
 
 ::
 
@@ -277,7 +295,13 @@
 
    5.安装npm版本v5.6.0 sudo npm install -g npm@v5.6.0
 
-###六.源码下载 >1.创建文件目录,进入目录下
+
+六.源码下载 
+---------
+
+''
+
+  1.创建文件目录,进入目录下
 
 ::
 
@@ -295,4 +319,122 @@
 
    3.进入到fabric目录查看fabric的git版本
 
-\``\` cd fabric/ git branch -a
+::
+
+   cd fabric/
+   git branch -a  （此处若不是1.2 可 git checkout release-1.2）
+
+七.下载fabric-samples 
+
+''
+
+   1.进入Hyperledger目录
+
+::
+
+   cd $GOPATH/src/github.com/hyperledger
+
+..
+
+   2.克隆fabric-samples源码
+
+::
+
+   git clone https://github.com/hyperledger/fabric-samples.git
+
+..
+
+   3.进入fabric-samples目录,查看分支并切换到1.2
+
+::
+
+   cd fabric-samples/
+   git branch -a
+   git checkout release-1.2 (若已是1.2可省略)
+
+..
+
+   4.目录效果如下 |1533546165852.jpg|
+
+八.下载镜像和要执行的二进制文件 
+
+''
+
+   1.进入到fabric-samples目录
+
+::
+
+   cd $GOPATH/src/github.com/hyperledger/fabric-samples
+
+..
+
+   2.install the Fabric Samples and binaries(注意：科学上网)
+
+::
+
+   curl -sSL http://bit.ly/2ysbOFE | bash -s 1.2.0
+
+..
+
+   3.完了如下图，镜像列表 |2.jpg|
+
+   4.目录中会多出如下图标红文件 |3.jpg|
+
+..
+
+   5.配置环境变量(参考第二步go环境变量配置)
+
+::
+
+   export PATH=.:$PATH:/home/gopath/src/github.com/hyperledger/fabric-samples/bin
+
+九.执行脚本测试 
+
+''
+   1.进到fabric-samples/first-network
+
+::
+
+   cd $GOPATH/src/github.com/hyperledger/fabric-samples/first-network
+
+..
+
+   2.生成配置文件
+
+::
+
+   ./byfn.sh -m generate
+
+..
+
+   3.启动项目
+
+::
+
+   ./byfn.sh -m up
+
+..
+
+   4.成功执行后效果 |image.png|
+
+   5.关闭 |image.png|
+
+十.阿里云小坑 
+
+''
+
+   1.编辑器打开文件
+
+::
+
+   vim /home/gopath/src/github.com/hyperledger/fabric-samples/first-network/base/docker-compose-base.yaml
+
+..
+
+   2.所有environment下添加 -GODEBUG=netdns=go
+
+.. |1533546165852.jpg| image:: https://upload-images.jianshu.io/upload_images/10417784-09d76947034e3f75.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/840
+.. |2.jpg| image:: https://upload-images.jianshu.io/upload_images/10417784-39cfd0e517c731ec.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/840
+.. |3.jpg| image:: https://upload-images.jianshu.io/upload_images/10417784-25d929a0d1007c5a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/840
+.. |image.png| image:: https://upload-images.jianshu.io/upload_images/10417784-fa152cca1a08cf70.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/840
+.. |image.png| image:: https://upload-images.jianshu.io/upload_images/10417784-4f76abcfca0359f9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/840
