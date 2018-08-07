@@ -19,7 +19,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = u'adwindone'
+project = u'adwind'
 copyright = u'2018, adwind'
 author = u'adwind'
 
@@ -39,6 +39,7 @@ release = u'0.0.1'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    'sphinx.ext.viewcode',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -101,7 +102,7 @@ html_static_path = ['ystatic']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'adwindonedoc'
+htmlhelp_basename = 'adwinddoc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -128,7 +129,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'adwindone.tex', u'adwindone Documentation',
+    (master_doc, 'adwind.tex', u'adwind Documentation',
      u'adwind', 'manual'),
 ]
 
@@ -138,7 +139,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'adwindone', u'adwindone Documentation',
+    (master_doc, 'adwind', u'adwind Documentation',
      [author], 1)
 ]
 
@@ -149,7 +150,10 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'adwindone', u'adwindone Documentation',
-     author, 'adwindone', 'One line description of project.',
+    (master_doc, 'adwind', u'adwind Documentation',
+     author, 'adwind', 'One line description of project.',
      'Miscellaneous'),
 ]
+
+
+# -- Extension configuration -------------------------------------------------
