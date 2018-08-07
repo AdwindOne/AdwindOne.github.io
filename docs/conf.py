@@ -43,7 +43,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Adwind's Docs For Learning'
+project = u'Adwind\'s Docs For Learning'
 copyright = u'2018, Read the Docs'
 
 # The version info for the project you're documenting, acts as replacement for
