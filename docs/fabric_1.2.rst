@@ -325,6 +325,7 @@ Hyperledger Fabric 1.2 部署 测试
    git branch -a  （此处若不是1.2 可 git checkout release-1.2）
 
 七.下载fabric-samples 
+--------------------
 
 ''
 
@@ -357,6 +358,7 @@ Hyperledger Fabric 1.2 部署 测试
    4.目录效果如下 |1533546165852.jpg|
 
 八.下载镜像和要执行的二进制文件 
+--------------------------
 
 ''
 
@@ -389,6 +391,7 @@ Hyperledger Fabric 1.2 部署 测试
    export PATH=.:$PATH:/home/gopath/src/github.com/hyperledger/fabric-samples/bin
 
 九.执行脚本测试 
+-------------
 
 ''
    1.进到fabric-samples/first-network
@@ -420,6 +423,7 @@ Hyperledger Fabric 1.2 部署 测试
    5.关闭 |image.png|
 
 十.阿里云小坑 
+-----------
 
 ''
 
