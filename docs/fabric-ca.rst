@@ -373,7 +373,8 @@ server端接收到请求:
 
 -  13.重新登记过程重新发送签名证书请求，获取新的数字证书。
    打开server端数据库，可以看到两条颁发给节点admin的证书记录，两个证书颁发的时间不一样。
-   \``\` sqlite> select \*from certificates;
+::
+   sqlite> select \*from certificates;
    admin|2d8b729447b9da894a82943c2c692052e6ad90aa|8f493a4146c495ba0ad75c9f18cffbb9ef3288af||good|0|2019-08-08
    08:46:00+00:00|0001-01-01 00:00:00+00:00|—–BEGIN CERTIFICATE—–
    MIICODCCAd+gAwIBAgIULYtylEe52olKgpQ8LGkgUuatkKowCgYIKoZIzj0EAwIw
@@ -421,4 +422,4 @@ AjskynJyI5wL7aRnKbbabqGw6oecTtE80o3mDrwuCkZbhrejcjBwMA4GA1UdDwEB
 6b4epDAfBgNVHSMEGDAWgBSPSTpBRsSVugrXXJ8Yz/u57zKIrzAQBgNVHREECTAH
 ggVib2dvbjAKBggqhkjOPQQDAgNHADBEAiA/un/UESFnG5JsDxguPG3sqTwMGUDb
 hVmv95HYkEgkJAIgBrWmP3W3x9VU2cqgp+859ZaqpVb5FJFeRhNl/WTpjJw= —–END
-CERTIFICATE—– \|1 sqlite> \``\`
+CERTIFICATE—– \|1 sqlite> 
