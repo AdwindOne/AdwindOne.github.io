@@ -1,6 +1,12 @@
-###一、环境准备 - go 版本 1.9以上（本机 go version go1.10.3
-darwin/amd64） - 依赖库安装 >brew install libtool (mac) >sudo apt
-install libtool libltdl-dev (ubuntu)
+一、环境准备
+==========
+
+- go 版本 1.9以上（本机 go version go1.10.3darwin/amd64） 
+- 依赖库安装 
+::
+brew install libtool (mac) 
+::
+sudo apt install libtool libltdl-dev (ubuntu)
 
 二、安装 Fabric-ca
 ~~~~~~~~~~~~~~~~~~
@@ -99,7 +105,10 @@ install libtool libltdl-dev (ubuntu)
    2018/08/08 15:28:12 [INFO] Home directory for default CA: /Users/yunlong/Applications/fabric-ca
    2018/08/08 15:28:12 [INFO] Listening on http://0.0.0.0:7054
 
-###三、简单使用，测试 - 1.重开一个终端,查看当前目录下文件
+三、简单使用，测试 
+---------------
+
+- 1.重开一个终端,查看当前目录下文件
 
 ::
 
