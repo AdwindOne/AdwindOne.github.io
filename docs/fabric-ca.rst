@@ -252,8 +252,8 @@ sudo apt install libtool libltdl-dev (ubuntu)
 
 -  8.接下来使用fabric-ca-client注册一个新的节点，这一步就是为fabric中的peer、user角色进行注册并登记的过程了，注册的命令为：
    ``fabric-ca-client register --id.name admin2 --id.type user --id.affiliation org1.department1 --id.attrs 'hf.Revoker=true,foo=bar'``
-   这里有两点需要注意： >1.
-   –id.type参数必须是是server端配置文件里hf.Registrar.Roles属性值里的一个
+   这里有两点需要注意： 
+   1.–id.type参数必须是是server端配置文件里hf.Registrar.Roles属性值里的一个
    打开fabric-ca-server的配置文件
 
 ::
@@ -373,7 +373,9 @@ server端接收到请求:
 
 -  13.重新登记过程重新发送签名证书请求，获取新的数字证书。
    打开server端数据库，可以看到两条颁发给节点admin的证书记录，两个证书颁发的时间不一样。
+
 ::
+
    sqlite> select \*from certificates;
    admin|2d8b729447b9da894a82943c2c692052e6ad90aa|8f493a4146c495ba0ad75c9f18cffbb9ef3288af||good|0|2019-08-08
    08:46:00+00:00|0001-01-01 00:00:00+00:00|—–BEGIN CERTIFICATE—–
