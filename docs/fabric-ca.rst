@@ -1,5 +1,10 @@
+
+Fabric-ca 部署测试
+=================
+
+
 一、环境准备
-==========
+----------
 
 - go 版本 1.9以上（本机 go version go1.10.3darwin/amd64） 
 - 依赖库安装 
@@ -9,7 +14,7 @@ brew install libtool (mac)
 sudo apt install libtool libltdl-dev (ubuntu)
 
 二、安装 Fabric-ca
-~~~~~~~~~~~~~~~~~~
+----------------
 
 -  
 
